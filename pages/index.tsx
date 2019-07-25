@@ -1,9 +1,19 @@
-import { NextPage } from 'next';
+import * as React from "react";
+import Layout from '../components/Layout'
+import DialNumbers from '../components/DialNumbers'
 
-const Index: NextPage = () =>
-  <main>
-    <div>Home</div>
-  </main>
-;
+const IndexPage = () => {
+  return (
+    <Layout title="SmartLock">
+      <div css={{
+        width: '100%',
+        marginTop: '150px',
+        textAlign: 'center',
+      }}>
+        <DialNumbers />
+      </div>
+    </Layout>
+  )
+};
 
-export default Index;
+export default IndexPage;

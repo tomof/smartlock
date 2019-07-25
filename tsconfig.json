@@ -17,6 +17,7 @@
     "noUnusedParameters": true,
     "strict": true,
     "target": "esnext",
+    "types": ["@emotion/core"],
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true
