@@ -1,8 +1,9 @@
-import * as React from "react";
+import { useState } from 'react'
 import Layout from '../components/Layout'
 import DialNumbers from '../components/DialNumbers'
 
 const IndexPage = () => {
+  const [dialNumber] = useState(1234);
   return (
     <Layout title="SmartLock">
       <div css={{
@@ -10,7 +11,9 @@ const IndexPage = () => {
         marginTop: '150px',
         textAlign: 'center',
       }}>
-        <DialNumbers />
+        <DialNumbers
+          selectedNumber={dialNumber}
+        />
       </div>
     </Layout>
   )

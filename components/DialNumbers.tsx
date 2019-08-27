@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { FunctionComponent } from 'react'
 import styled from '@emotion/styled'
 
 const DigitFrame = styled.div`
@@ -14,7 +14,7 @@ const DigitFrame = styled.div`
   }
 `;
 
-const DialNumbers: React.FunctionComponent = () => (
+const DialNumbers: FunctionComponent<{ selectedNumber: number }> = () => (
   <div css={{
     width: '200px',
     height: '50px',
@@ -57,8 +57,7 @@ const DialNumbers: React.FunctionComponent = () => (
         border: 'none',
       }}
       type="number"
-      pattern="\d*"
-      value="1234"
+      pattern="\d"
     />
   </div>
 );
